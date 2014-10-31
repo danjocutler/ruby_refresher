@@ -1,10 +1,10 @@
 require 'rspec'
 require_relative './questions'
 
-RSpec.configure do |config|
-  config.color = true
-  config.formatter = :documentation
-end
+# RSpec.configure do |config|
+#   config.color = true
+#   config.formatter = :documentation
+# end
 
 describe 'the Friday test :)' do
   
@@ -106,7 +106,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 'foobar'
   end
 
-  specify 'average_of_array' do
+  fit 'average_of_array' do
     n = average_of_array [10, 15, 25]
     expect(n).to eq 17
   end
