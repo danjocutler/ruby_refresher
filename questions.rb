@@ -250,8 +250,36 @@ end
 # implement fizzbuzz without modulo, i.e. the % method
 # go from 1 to 100
 # (there's no RSpec test for this one)
-def fizzbuzz_without_modulo
+class Fizzbuzz_without_modulo
+	def divisible_by_three(number)
+		divisible_by(number,3)
+	end
+
+	def divisible_by_five(number)
+		divisible_by(number,5)
+	end
+
+	def divisible_by_fifteen(number)
+      	divisible_by(number,15)
+	end
+
+	def divisible_by(number,divisor)
+		number-divisor*(number/divisor) == 0 ? true : number
+	end
+
+    def fizzbuzz(number)
+    	return "FizzBuzz" if divisible_by(number,15) == true
+    	return "Fizz"     if divisible_by(number,3 ) == true
+    	return "Buzz"     if divisible_by(number,5 ) == true
+    	number
+    end
+
 end
+
+# game = Fizzbuzz_without_modulo.new
+
+# [*1..100].each {|n| `say #{game.fizzbuzz(n)}`}
+# uncomment 2 lines above and press 'cmd' + 'B' to check
 
 # print the lyrics of the song 99 bottles of beer on the wall
 # http://www.99-bottles-of-beer.net/lyrics.html
