@@ -276,10 +276,10 @@ class Fizzbuzz_without_modulo
 
 end
 
-# game = Fizzbuzz_without_modulo.new
+game = Fizzbuzz_without_modulo.new
 
 # [*1..100].each {|n| `say #{game.fizzbuzz(n)}`}
-# uncomment 2 lines above and press 'cmd' + 'B' to check
+# uncomment the line above and press 'cmd' + 'B' to check
 
 # print the lyrics of the song 99 bottles of beer on the wall
 # http://www.99-bottles-of-beer.net/lyrics.html
