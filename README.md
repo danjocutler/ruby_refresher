@@ -1,4 +1,7 @@
 ## Friday test!
+===============
+-- 3 tests left to go!
+-------------------------
 
 Here we're going to revisit the basics of Ruby. There are 41 questions - you don't have to do every single one (although if you can, that's great). You should be able to do at least 50% of them. They vary in level from quite easy to fairly hard. Work through them and check if they're correct by running the specs.
 
@@ -10,7 +13,7 @@ To run the specs, just run
 $ rspec questions_spec.rb
 ~~~
 
-**Quick tip**: to run a single example, change `it` to `fit` on that example, then run
+**Quick tip**: to run a single example, change `specify` to `fit` on that example, then run
 
 ~~~
 $ rspec questions_spec.rb --tag focus
