@@ -260,7 +260,7 @@ class Fizzbuzz_without_modulo
 	end
 
 	def divisible_by_fifteen(number)
-      	divisible_by(number,15)
+    divisible_by(number,15)
 	end
 
 	def divisible_by(number,divisor)
@@ -273,13 +273,7 @@ class Fizzbuzz_without_modulo
     	return "Buzz"     if divisible_by(number,5 ) == true
     	number
     end
-
 end
-
-game = Fizzbuzz_without_modulo.new
-
-# [*1..100].each {|n| `say #{game.fizzbuzz(n)}`}
-# uncomment the line above and press 'cmd' + 'B' to check
 
 # print the lyrics of the song 99 bottles of beer on the wall
 # http://www.99-bottles-of-beer.net/lyrics.html
@@ -288,4 +282,12 @@ game = Fizzbuzz_without_modulo.new
 # at the end.
 # (there's no RSpec test for this one)
 def ninety_nine_bottles_of_beer
+	bottles = 99
+	number_of_bottles = proc {|n| "#{n} bottle#{n == 1 ? '' : 's'}"}
+	bottles.downto(2) do |num|
+		puts "#{number_of_bottles[num]} of beer on the wall, #{number_of_bottles[num]} of beer."
+		puts "Take one down, pass it around, #{number_of_bottles[num-1]} of beer on the wall."
+	end
+	puts "#{number_of_bottles[1]} of beer on the wall, #{number_of_bottles[1]} of beer."
+	puts "Take one down, pass it around, no more bottles of beer on the wall."
 end
