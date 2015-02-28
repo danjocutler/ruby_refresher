@@ -1,5 +1,7 @@
 ## Friday test!
 ===============
+
+[![Code Climate](https://codeclimate.com/github/danjocutler/ruby_refresher/badges/gpa.svg)](https://codeclimate.com/github/danjocutler/ruby_refresher)
 -- 3 tests left to go!
 -------------------------
 
